@@ -1,0 +1,25 @@
+<div align="center">
+    <h1>{{titulo}}</h1>
+    <div *ngFor="let user of usuarios" align="center">
+        <table width="50">
+            <br>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Sexo</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>{{user.nombre}}</td>
+                <td>{{user.apellido}}</td>
+                <td>{{user.sexo}}</td>
+                <td>{{user.edad}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<!--Interpolacion, es una opcion que permite la susticion de un expresion por el valor de un template, convirtiendolo en 
+una cadena de texto-->
+<!--<p>{{ status }}</p>--> <!--Variable que reconocera typescript-->
