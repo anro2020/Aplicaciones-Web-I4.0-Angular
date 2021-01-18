@@ -1,0 +1,24 @@
+<div *ngIf="persona">
+    <h2>Detalles De {{persona.nombre}}</h2>
+    <div><span>ID: </span>{{persona.id}}</div>
+    <div>
+        <label>Nombre:
+            <input [(ngModel)]="persona.nombre" placeholder="Nombre"/>
+        </label>
+        <div>
+            <label>Apellido:
+            <input [(ngModel)]="persona.apellido" placeholder="Apellido"/>
+        </label>
+        </div>
+        <div>
+            <label>Sexo:
+            <input [(ngModel)]="persona.sexo" placeholder="Sexo"/>
+        </label>
+        </div>
+        <div>
+            <label>Edad:
+            <input [(ngModel)]="persona.edad" placeholder="Edad"/>
+        </label>
+        </div>
+    </div>
+</div>
