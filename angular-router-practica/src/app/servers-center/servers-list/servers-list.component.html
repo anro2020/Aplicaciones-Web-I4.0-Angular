@@ -1,0 +1,9 @@
+<ul class="crises">
+  <li *ngFor="let server of servers$ | async"
+      [class.selected]="server.id === selectedId">
+    <a [routerLink]="[server.id]">
+      <span class="badge">{{ server.id }}</span>{{ server.name }}
+    </a>
+  </li>
+</ul>
+<router-outlet></router-outlet>

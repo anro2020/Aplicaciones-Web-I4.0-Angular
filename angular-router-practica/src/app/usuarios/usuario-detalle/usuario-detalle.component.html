@@ -1,0 +1,13 @@
+<h2>USUARIOS</h2>
+<div *ngIf="usuario$ | async as usuario">
+  <h3>"{{ usuario.name }}"</h3>
+  <div>
+    <label>Id: </label>{{ usuario.id }}</div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="usuario.name" placeholder="name"/>
+  </div>
+  <p>
+    <button (click)="gotoUsuarios(usuario)">Back</button>
+  </p>
+</div>
